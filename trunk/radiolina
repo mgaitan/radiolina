@@ -73,6 +73,9 @@ case $1 in
 	14|nacional)
 	mplayer mms://streaming.snmp.gov.ar/radionacional
 	;;
+	15|rnma)
+	mplayer http://lilith.nodo50.org:8000/mediosalter.mp3
+	;;
 	*|-help)
 	
 	echo "uso: ./radiolina <numero de la radio>"
@@ -93,6 +96,7 @@ case $1 in
 	echo 12. Los 40 principales
 	echo 13. Cool Radio
 	echo 14. Radio Nacional
+	echo 15. Red Nacional de Medios Alternativos
 	;; 
 
 
