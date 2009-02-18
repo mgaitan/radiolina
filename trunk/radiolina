@@ -29,7 +29,9 @@ echo "Vea <http://www.gnu.org/licenses/gpl-3.0.html> para más detalles."
 echo ""
 
 case $1 in
-
+	dolina)
+	mplayer http://venganzasdelpasado.com.ar/`date +%Y -d 'yesterday'`/lavenganza_`date +%Y-%m-%d -d 'yesterday'`.mp3
+	;;
 	1|mitre) 
 	mplayer mms://streammitre.uigc.net/mitrevivo
 	;;
@@ -82,6 +84,7 @@ case $1 in
 	echo ""
 	echo "RADIOS DISPONIBLES"
 	echo ""
+	echo dolina
     echo 1. Radio Mitre 
 	echo 2. Rock And pop
 	echo 3. Radio de la Ciudad
