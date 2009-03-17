@@ -32,6 +32,9 @@ case $1 in
 	dolina)
 	mplayer http://venganzasdelpasado.com.ar/`date +%Y -d 'yesterday'`/lavenganza_`date +%Y-%m-%d -d 'yesterday'`.mp3
 	;;
+	calf)
+	mplayer  http://78.159.108.83:8690/
+	;;	
 	1|mitre) 
 	mplayer mms://streammitre.uigc.net/mitrevivo
 	;;
@@ -85,6 +88,7 @@ case $1 in
 	echo "RADIOS DISPONIBLES"
 	echo ""
 	echo dolina
+	echo calf
     echo 1. Radio Mitre 
 	echo 2. Rock And pop
 	echo 3. Radio de la Ciudad
