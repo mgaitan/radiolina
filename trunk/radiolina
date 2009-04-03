@@ -61,7 +61,7 @@ case $1 in
 	mplayer mms://lared.wms.sinectis.com.ar/laredam910
 	;;
 	9|eter)
-	mplayer mms://media228.cxnlive.com/radioeter
+	mplayer http://box01.sonic.fm:7172
 	;;
 	10|metro)
 	mplayer mms://200.59.146.10/radiometro-ba
