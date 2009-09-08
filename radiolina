@@ -33,7 +33,6 @@ case $1 in
 	mplayer mms://canal7envivo.telecomdatacenter.com.ar/canal7envivo
 	;;
 
-case $1 in
 	dolina)
 	mplayer http://venganzasdelpasado.com.ar/`date +%Y -d 'yesterday'`/lavenganza_`date +%Y-%m-%d -d 'yesterday'`.mp3
 	;;
