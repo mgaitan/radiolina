@@ -29,6 +29,11 @@ echo "Vea <http://www.gnu.org/licenses/gpl-3.0.html> para más detalles."
 echo ""
 
 case $1 in
+	canal7)
+	mplayer mms://canal7envivo.telecomdatacenter.com.ar/canal7envivo
+	;;
+
+case $1 in
 	dolina)
 	mplayer http://venganzasdelpasado.com.ar/`date +%Y -d 'yesterday'`/lavenganza_`date +%Y-%m-%d -d 'yesterday'`.mp3
 	;;
@@ -76,7 +81,7 @@ case $1 in
 	mplayer mms://67.19.12.42/coolradio
 	;;
 	14|nacional)
-	mplayer mms://streaming.snmp.gov.ar/radionacional
+	mplayer mms://am870.telecomdatacenter.com.ar/am870 
 	;;
 	15|rnma)
 	mplayer http://lilith.nodo50.org:8000/mediosalter.mp3
@@ -87,6 +92,7 @@ case $1 in
 	echo ""
 	echo "RADIOS DISPONIBLES"
 	echo ""
+	echo canal7
 	echo dolina
 	echo calf
     echo 1. Radio Mitre 
