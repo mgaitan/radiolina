@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#lala
 #***************************************************************************
 #*  Radiolina, un script bash dependiente de Mplayer para escuchar radios  *
 #*  http://code.google.com/p/radiolina/                                    *
@@ -44,6 +44,9 @@ case $1 in
 	calf)
 	mplayer  http://78.159.108.83:8690/
 	;;	
+	0|continental)
+	mplayer mmsh://66.165.172.171/arcontinental?MSWMExt=.asf
+	;;
 	1|mitre) 
 	mplayer mms://streammitre.uigc.net/mitrevivo
 	;;
@@ -99,6 +102,7 @@ case $1 in
 	echo canal7
 	echo dolina
 	echo calf
+	echo 0. Continental
     echo 1. Radio Mitre 
 	echo 2. Rock And pop
 	echo 3. Radio de la Ciudad
