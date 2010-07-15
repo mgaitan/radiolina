@@ -4,8 +4,8 @@
 #*  Radiolina, un script bash dependiente de Mplayer para escuchar radios  *
 #*  http://code.google.com/p/radiolina/                                    *
 #*                                                                         *
-#*  Copyright (c) 2008		                                               *
-#*  Martín Gaitán - gaitan (en) gmail.com								   *
+#*  Copyright (c) 2008                                                     *
+#*  Martín Gaitán - gaitan (en) gmail.com                                  *
 #*                                                                         *
 #* This program is free software: you can redistribute it and/or modify    *
 #* it under the terms of the GNU General Public License as published by    *
@@ -29,96 +29,96 @@ echo "Vea <http://www.gnu.org/licenses/gpl-3.0.html> para más detalles."
 echo ""
 
 case $1 in
-	canal7)
-	mplayer mms://canal7envivo.telecomdatacenter.com.ar/canal7envivo
-	;;
+    canal7)
+    mplayer mms://canal7envivo.telecomdatacenter.com.ar/canal7envivo
+    ;;
 
-	tn|todomentiras)
-	mplayer mms://streamtn.uigc.net/TN
-	;;
+    tn|todomentiras)
+    mplayer mms://streamtn.uigc.net/TN
+    ;;
 
 
-	dolina)
-	mplayer http://venganzasdelpasado.com.ar/`date +%Y -d 'yesterday'`/lavenganza_`date +%Y-%m-%d -d 'yesterday'`.mp3
-	;;
-	calf)
-	mplayer  http://78.159.108.83:8690/
-	;;	
-	0|continental)
-	mplayer mmsh://66.165.172.171/arcontinental?MSWMExt=.asf
-	;;
-	1|mitre) 
-	mplayer mms://streammitre.uigc.net/mitrevivo
-	;;
-	2|rp) 
-	mplayer mms://200.59.146.10/rockandpop-du
-	;;
+    dolina)
+    mplayer http://venganzasdelpasado.com.ar/`date +%Y -d 'yesterday'`/lavenganza_`date +%Y-%m-%d -d 'yesterday'`.mp3
+    ;;
+    calf)
+    mplayer  http://72.29.70.19:8246/
+    ;;  
+    0|continental)
+    mplayer mmsh://66.165.172.171/arcontinental?MSWMExt=.asf
+    ;;
+    1|mitre) 
+    mplayer mms://streammitre.uigc.net/mitrevivo
+    ;;
+    2|rp) 
+    mplayer mms://200.59.146.10/rockandpop-du
+    ;;
 
-	3|ciudad)
-	mplayer mms://streaming.netizen.com.ar/oncediez 
-	;;
-	4|delplata)
-	mplayer mms://delplata.telecomdatacenter.com.ar/delplata
-	;;
-	5|latribu)
-	mplayer http://193.41.7.38:8820/
-	;;
-	6|radio10)
-	mplayer mms://200.43.193.143/radio10
-	;;
-	7|la100)
-	mplayer rtsp://g2.prima.com.ar/vivo/cadena100.rm
-	;;
-	8|lared)
-	mplayer mms://lared.wms.sinectis.com.ar/laredam910
-	;;
-	9|eter)
-	mplayer http://box01.sonic.fm:7172
-	;;
-	10|metro)
-	mplayer mms://200.59.146.10/radiometro-ba
-	;;
-	11|mega)
-	mplayer http://mega.telecomdatacenter.com.ar/mega
-	;;
-	12|40principales)
-	mplayer http://66.175.96.10/ARLOS40P
-	;;
-	13|cool)
-	mplayer mms://67.19.12.42/coolradio
-	;;
-	14|nacional)
-	mplayer mms://am870.telecomdatacenter.com.ar/am870 
-	;;
-	15|rnma)
-	mplayer http://lilith.nodo50.org:8000/mediosalter.mp3
-	;;
-	*|-help)
-	
-	echo "uso: ./radiolina <numero de la radio>"
-	echo ""
-	echo "RADIOS DISPONIBLES"
-	echo ""
-	echo canal7
-	echo dolina
-	echo calf
-	echo 0. Continental
+    3|ciudad)
+    mplayer mms://streaming.netizen.com.ar/oncediez 
+    ;;
+    4|delplata)
+    mplayer mms://delplata.telecomdatacenter.com.ar/delplata
+    ;;
+    5|latribu)
+    mplayer http://193.41.7.38:8820/
+    ;;
+    6|radio10)
+    mplayer mms://200.43.193.143/radio10
+    ;;
+    7|la100)
+    mplayer rtsp://g2.prima.com.ar/vivo/cadena100.rm
+    ;;
+    8|lared)
+    mplayer mms://lared.wms.sinectis.com.ar/laredam910
+    ;;
+    9|eter)
+    mplayer http://box01.sonic.fm:7172
+    ;;
+    10|metro)
+    mplayer mms://200.59.146.10/radiometro-ba
+    ;;
+    11|mega)
+    mplayer http://mega.telecomdatacenter.com.ar/mega
+    ;;
+    12|40principales)
+    mplayer http://66.175.96.10/ARLOS40P
+    ;;
+    13|cool)
+    mplayer mms://67.19.12.42/coolradio
+    ;;
+    14|nacional)
+    mplayer mms://am870.telecomdatacenter.com.ar/am870 
+    ;;
+    15|rnma)
+    mplayer http://lilith.nodo50.org:8000/mediosalter.mp3
+    ;;
+    *|-help)
+    
+    echo "uso: ./radiolina <numero de la radio>"
+    echo ""
+    echo "RADIOS DISPONIBLES"
+    echo ""
+    echo canal7
+    echo dolina
+    echo calf
+    echo 0. Continental
     echo 1. Radio Mitre 
-	echo 2. Rock And pop
-	echo 3. Radio de la Ciudad
-	echo 4. Del plata
-	echo 5. La tribu
-	echo 6. Radio 10
-	echo 7. La 100 
-	echo 8. La Red
-	echo 9. Eter
-	echo 10. La Metro
-	echo 11. Mega
-	echo 12. Los 40 principales
-	echo 13. Cool Radio
-	echo 14. Radio Nacional
-	echo 15. Red Nacional de Medios Alternativos
-	;; 
+    echo 2. Rock And pop
+    echo 3. Radio de la Ciudad
+    echo 4. Del plata
+    echo 5. La tribu
+    echo 6. Radio 10
+    echo 7. La 100 
+    echo 8. La Red
+    echo 9. Eter
+    echo 10. La Metro
+    echo 11. Mega
+    echo 12. Los 40 principales
+    echo 13. Cool Radio
+    echo 14. Radio Nacional
+    echo 15. Red Nacional de Medios Alternativos
+    ;; 
 
 
 esac
