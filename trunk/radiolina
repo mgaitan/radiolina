@@ -88,7 +88,7 @@ case $1 in
     mplayer mms://67.19.12.42/coolradio
     ;;
     14|nacional)
-    mplayer mms://am870.telecomdatacenter.com.ar/am870 
+    mplayer http://208.85.241.150:8010/
     ;;
     15|rnma)
     mplayer http://lilith.nodo50.org:8000/mediosalter.mp3
