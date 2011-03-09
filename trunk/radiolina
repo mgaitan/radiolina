@@ -1,11 +1,10 @@
 #!/bin/bash
-#lala
 #***************************************************************************
 #*  Radiolina, un script bash dependiente de Mplayer para escuchar radios  *
 #*  http://code.google.com/p/radiolina/                                    *
 #*                                                                         *
-#*  Copyright (c) 2008                                                     *
-#*  Martín Gaitán - gaitan (en) gmail.com                                  *
+#*  Copyright (c) 2008-2011                                                *
+#*  Martín Gaitán - gaitan (at) gmail.com                                  *
 #*                                                                         *
 #* This program is free software: you can redistribute it and/or modify    *
 #* it under the terms of the GNU General Public License as published by    *
@@ -22,7 +21,7 @@
 #***************************************************************************
 
 
-echo "Radiolina v0.1  Copyright (C) 2008 Martín Gaitán"
+echo "Radiolina v0.3  Copyright (C) 2011 Martín Gaitán"
 echo "Este programa se ofrece SIN GARANTÍA ALGUNA;"
 echo "Es software libre, y usted puede redistribuirlo bajo ciertas condiciones;" 
 echo "Vea <http://www.gnu.org/licenses/gpl-3.0.html> para más detalles."
@@ -42,7 +41,7 @@ case $1 in
     mplayer http://venganzasdelpasado.com.ar/`date +%Y -d 'yesterday'`/lavenganza_`date +%Y-%m-%d -d 'yesterday'`.mp3
     ;;
     calf)
-    mplayer  http://72.29.70.19:8246/
+    mplayer  http://204.45.65.218:11704
     ;;  
     0|continental)
     mplayer mmsh://66.165.172.171/arcontinental?MSWMExt=.asf
@@ -93,6 +92,9 @@ case $1 in
     15|rnma)
     mplayer http://lilith.nodo50.org:8000/mediosalter.mp3
     ;;
+    16|belgrano)
+    mplayer mms://a1585.l2573453584.c25734.g.lm.akamaistream.net/D/1585/25734/v0001/reflector:53584
+    ;;
     *|-help)
     
     echo "uso: ./radiolina <numero de la radio>"
@@ -118,6 +120,7 @@ case $1 in
     echo 13. Cool Radio
     echo 14. Radio Nacional
     echo 15. Red Nacional de Medios Alternativos
+    echo 16. Radio Belgrano
     ;; 
 
 
