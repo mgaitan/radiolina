@@ -41,7 +41,7 @@ case $1 in
     mplayer http://venganzasdelpasado.com.ar/`date +%Y -d 'yesterday'`/lavenganza_`date +%Y-%m-%d -d 'yesterday'`.mp3
     ;;
     calf)
-    mplayer  http://204.45.65.218:11704
+    mplayer  http://64.191.116.84:8030/
     ;;  
     0|continental)
     mplayer mmsh://66.165.172.171/arcontinental?MSWMExt=.asf
@@ -69,7 +69,7 @@ case $1 in
     mplayer rtsp://g2.prima.com.ar/vivo/cadena100.rm
     ;;
     8|lared)
-    mplayer mms://lared.wms.sinectis.com.ar/laredam910
+    mplayer rtmp://vivolared.multimediosamerica.com.ar/streamlared/&streamId=lared
     ;;
     9|eter)
     mplayer http://box01.sonic.fm:7172
@@ -95,6 +95,11 @@ case $1 in
     16|belgrano)
     mplayer mms://a1585.l2573453584.c25734.g.lm.akamaistream.net/D/1585/25734/v0001/reflector:53584
     ;;
+    17|nacionalrock)
+    mplayer http://208.85.241.150:8162/
+    ;;
+    18|madres)
+    mplayer http://200.68.81.65:8000/am530
     *|-help)
     
     echo "uso: ./radiolina <numero de la radio>"
@@ -121,6 +126,8 @@ case $1 in
     echo 14. Radio Nacional
     echo 15. Red Nacional de Medios Alternativos
     echo 16. Radio Belgrano
+    echo 17. Nacional Rock 93.7
+    echo 18. Radio Madres
     ;; 
 
 
