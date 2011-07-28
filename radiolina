@@ -75,7 +75,7 @@ case $1 in
     mplayer http://box01.sonic.fm:7172
     ;;
     10|metro)
-    mplayer mms://200.59.146.10/radiometro-ba
+    mplayer http://streaming.metro951.com/metro?MSWMExt=.asf
     ;;
     11|mega)
     mplayer http://mega.telecomdatacenter.com.ar/mega
@@ -120,7 +120,7 @@ case $1 in
     echo 7. La 100 
     echo 8. La Red
     echo 9. Eter
-    echo 10. La Metro
+    echo 10. Metro
     echo 11. Mega
     echo 12. Los 40 principales
     echo 13. Cool Radio
