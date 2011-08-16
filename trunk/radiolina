@@ -47,7 +47,7 @@ case $1 in
     mplayer mmsh://66.165.172.171/arcontinental?MSWMExt=.asf
     ;;
     1|mitre) 
-    mplayer mms://streammitre.uigc.net/mitrevivo
+    mplayer http://crp02.cienradios.com.ar/mitre790.mp3
     ;;
     2|rp) 
     mplayer mms://200.59.146.10/rockandpop-du
