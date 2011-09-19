@@ -21,7 +21,7 @@
 #***************************************************************************
 
 
-echo "Radiolina v0.3  Copyright (C) 2011 Martín Gaitán"
+echo "Radiolina v0.4  Copyright (C) 2011 Martín Gaitán"
 echo "Este programa se ofrece SIN GARANTÍA ALGUNA;"
 echo "Es software libre, y usted puede redistribuirlo bajo ciertas condiciones;" 
 echo "Vea <http://www.gnu.org/licenses/gpl-3.0.html> para más detalles."
@@ -44,15 +44,14 @@ case $1 in
     mplayer  http://64.191.116.84:8030/
     ;;  
     0|continental)
-    mplayer mmsh://66.165.172.171/arcontinental?MSWMExt=.asf
+    mplayer rtmp://wmf03.host.mia.us.cadenaunionradio.com/arcontinental/arcontinental.stream 
     ;;
     1|mitre) 
     mplayer http://crp02.cienradios.com.ar/mitre790.mp3
     ;;
     2|rp) 
-    mplayer mms://200.59.146.10/rockandpop-du
+    mplayer http://streaming.fmrockandpop.com/rockandpop?MSWMExt=.asf
     ;;
-
     3|ciudad)
     mplayer mms://streaming.netizen.com.ar/oncediez 
     ;;
@@ -101,6 +100,9 @@ case $1 in
     18|madres)
     mplayer http://200.68.81.65:8000/am530
     ;;
+    19|unc)
+    mplayer mms://wms1.barracas.sinectis.com.ar/am580
+    ;;	
     *|-help)
     
     echo "uso: ./radiolina <numero de la radio>"
@@ -129,6 +131,7 @@ case $1 in
     echo 16. Radio Belgrano
     echo 17. Nacional Rock 93.7
     echo 18. Radio Madres
+    echo 19. Universidad Córdoba
     ;; 
 
 
