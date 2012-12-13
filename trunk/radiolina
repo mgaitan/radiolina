@@ -74,7 +74,7 @@ case $1 in
     mplayer http://box01.sonic.fm:7172
     ;;
     10|metro)
-    mplayer http://streaming.metro951.com/metro?MSWMExt=.asf
+    mplayer http://201.212.5.144/metro
     ;;
     11|mega)
     mplayer http://mega.telecomdatacenter.com.ar/mega
