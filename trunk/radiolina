@@ -23,7 +23,7 @@
 
 echo "Radiolina v0.4  Copyright (C) 2011 Martín Gaitán"
 echo "Este programa se ofrece SIN GARANTÍA ALGUNA;"
-echo "Es software libre, y usted puede redistribuirlo bajo ciertas condiciones;" 
+echo "Es software libre, y usted puede redistribuirlo bajo ciertas condiciones;"
 echo "Vea <http://www.gnu.org/licenses/gpl-3.0.html> para más detalles."
 echo ""
 
@@ -42,18 +42,18 @@ case $1 in
     ;;
     calf)
     mplayer  http://64.191.116.84:8030/
-    ;;  
-    0|continental)
-    mplayer rtmp://wmf03.host.mia.us.cadenaunionradio.com/arcontinental/arcontinental.stream 
     ;;
-    1|mitre) 
+    0|continental)
+    mplayer rtmp://wmf03.host.mia.us.cadenaunionradio.com/arcontinental/arcontinental.stream
+    ;;
+    1|mitre)
     mplayer http://crp02.cienradios.com.ar/mitre790.mp3
     ;;
-    2|rp) 
+    2|rp)
     mplayer http://streaming.fmrockandpop.com/rockandpop?MSWMExt=.asf
     ;;
     3|ciudad)
-    mplayer mms://streaming.netizen.com.ar/oncediez 
+    mplayer mms://streaming.netizen.com.ar/oncediez
     ;;
     4|delplata)
     mplayer mms://delplata.telecomdatacenter.com.ar/delplata
@@ -74,7 +74,7 @@ case $1 in
     mplayer http://box01.sonic.fm:7172
     ;;
     10|metro)
-    mplayer http://201.212.5.144/metro
+    mplayer "rtmp://edgeamericaspushlivefs.fplive.net/edgeamericaspushlive-live/streamMetroRadio live=1" -vo null -cache 5000 -cache-min 50
     ;;
     11|mega)
     mplayer http://mega.telecomdatacenter.com.ar/mega
@@ -102,9 +102,9 @@ case $1 in
     ;;
     19|unc)
     mplayer mms://wms1.barracas.sinectis.com.ar/am580
-    ;;	
+    ;;
     *|-help)
-    
+
     echo "uso: ./radiolina <numero de la radio>"
     echo ""
     echo "RADIOS DISPONIBLES"
@@ -113,13 +113,13 @@ case $1 in
     echo dolina
     echo calf
     echo 0. Continental
-    echo 1. Radio Mitre 
+    echo 1. Radio Mitre
     echo 2. Rock And pop
     echo 3. Radio de la Ciudad
     echo 4. Del plata
     echo 5. La tribu
     echo 6. Radio 10
-    echo 7. La 100 
+    echo 7. La 100
     echo 8. La Red
     echo 9. Eter
     echo 10. Metro
@@ -132,7 +132,7 @@ case $1 in
     echo 17. Nacional Rock 93.7
     echo 18. Radio Madres
     echo 19. Universidad Córdoba
-    ;; 
+    ;;
 
 
 esac
