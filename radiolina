@@ -74,7 +74,7 @@ case $1 in
     mplayer http://box01.sonic.fm:7172
     ;;
     10|metro)
-    mplayer "rtmp://edgeamericaspushlivefs.fplive.net/edgeamericaspushlive-live/streamMetroRadio live=1" -vo null -cache 5000 -cache-min 50
+    vlc --intf dummy --no-video-deco --no-embedded-video "rtmp://edgeamericaspushlivefs.fplive.net/edgeamericaspushlive-live/streamMetroRadio live=1"
     ;;
     11|mega)
     mplayer http://mega.telecomdatacenter.com.ar/mega
